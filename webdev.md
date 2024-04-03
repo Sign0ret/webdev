@@ -2,4 +2,6 @@
 - install nodejs latest supported version
 - install npm global
 - install nice terminal
-- initiate node on terminal: npm init
+- install  express
+- add to gitignore  (node_modules/)
+- git init
