@@ -1,0 +1,22 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: cadetblue;
+    color: azure;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+}
