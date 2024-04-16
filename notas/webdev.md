@@ -5,3 +5,6 @@
 - install  express
 - add to gitignore  (node_modules/)
 - git init
+
+## Protocolos API
+- REST  -> Stateless (no almacena estado)
