@@ -5,74 +5,393 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap example</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+    </style>
 </head>
 <body class="bg-black">
-  <nav class="bg-black border-b border-gray-600">
+  <nav class="bg-black border-b border-gray-600 fixed top-0 w-full z-10">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
-      <a class="pl-2">
+      <div class="flex items-left justify-between">
+        <a class="px-2 pt-2">
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 76 65"
+            fill="none" xmlns="http://www.w3.org/2000/svg"><path
+            d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff"/>
+          </svg>
+        </a>
+        <h1 class="text-[#333333] text-2xl px-2">/</h1>
+        <a class="px-1">
+          <img src="../public/nextjs.png" width="100" />
+        </a>
+        <ul class="flex flex-row list-none pl-5">
+          <li class="nav-item">
+            <a class="text-white lg:text-gray-300 lg:hover:text-white px-3 py-2 flex items-center text-sm" href="#">Showcase</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white lg:text-gray-300 lg:hover:text-white px-3 py-2 flex items-center text-sm" href="#">Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white lg:text-gray-300 lg:hover:text-white px-3 py-2 flex items-center text-sm" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white lg:text-gray-300 lg:hover:text-white px-3 py-2 flex items-center text-sm" href="#">Analytics</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white lg:text-gray-300 lg:hover:text-white px-3 py-2 flex items-center text-sm" href="#">Templates</a>
+          </li>
+          <li class="nav-item">
+            <a class="text-white lg:text-gray-300 lg:hover:text-white px-3 py-2 flex items-center text-sm" href="#">Enterprise</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="flex items-center">
+        <div class="relative flex items-center">
+          <input class="rounded-md bg-[#161616] hover:bg-[#1F1F1F] text-[#7C7C7C] pl-4 pr-20 py-1.5 focus:outline-none focus:shadow-outline text-sm" type="text" placeholder="Search documentation..." aria-label="Search">
+          <div class="absolute inset-y-0 right-0 flex items-center pl-3">
+            <span class="bg-[#0A0A0A] text-white text-xs font-medium me-2 px-1.5 py-0.5 rounded-md dark:bg-[#0A0A0A] dark:text-white border border-gray-500">CtrlK</span>
+          </div>
+        </div>
+        <button class="bg-black text-white px-3 py-1.5 rounded-md ml-3 focus:outline-none border border-[#1F1F1F] text-sm font-semibold flex hover:bg-[#1F1F1F]">
+          <a class="pr-2 pt-0.5">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 76 65"
+              fill="none" xmlns="http://www.w3.org/2000/svg"><path
+              d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff"/>
+            </svg>
+          </a>
+          <p>Deploy</p>
+        </button>
+        <button class="bg-white text-black px-4 py-1.5 rounded-md ml-3 focus:outline-none text-sm font-semibold hover:bg-[#CCCCCC]">Learn</button>
+      </div>
+    </div>
+  </nav>`
+  <div class="py-16" />
+  <hero class="text-center justify-center items-center bg-black">
+    <div class="container mx-auto px-4 py-40 text-center justify-center items-center">
+      <h1 class="font-extrabold text-[#DDDDDD] text-6xl tracking-tighter pb-5">The React Framework for the Web</h1>
+      <h3 class="text-[#838383] text-xl mt-4 mx-60 px-5 pt-5">Used by some of the world's largest companies, Next.js enables you to create <span class="text-[#FAFAFA]">high-quality web applications</span> with the power of React components.</h3>
+      <div class="mt-10 pt-10">
+        <div class="flex justify-center">
+          <button class="bg-white text-black px-6 py-3 rounded-md ml-3 focus:outline-none text-base font-medium hover:bg-[#CCCCCC]">Get Started</button>
+          <button class="bg-black text-white px-6 py-3 rounded-md ml-3 focus:outline-none text-base font-medium hover:bg-[#1F1F1F] border border-[#1F1F1F]">Learn Next.js</button>
+        </div>
+      </div>
+      <div class="container flex flex-row justify-center items-center text-center mt-6">
         <svg
-          width="26"
-          height="26"
+          width="8"
+          height="8"
           viewBox="0 0 76 65"
           fill="none" xmlns="http://www.w3.org/2000/svg"><path
           d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff"/>
         </svg>
-      </a>
-      <a>
-        <img 
-          src="../public/nextjs.png" 
-          
-        />
-      </a>
-      <ul class="flex flex-row list-none">
-        <li class="nav-item">
-          <a class="text-white lg:text-gray-300 lg:hover:text-white px-3 py-2 flex items-center text-xs uppercase font-bold" href="#">Showcase</a>
-        </li>
-        <li class="nav-item">
-          <a class="text-white lg:text-gray-300 lg:hover:text-white px-3 py-2 flex items-center text-xs uppercase font-bold" href="#">Docs</a>
-        </li>
-        <li class="nav-item">
-          <a class="text-white lg:text-gray-300 lg:hover:text-white px-3 py-2 flex items-center text-xs uppercase font-bold" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="text-white lg:text-gray-300 lg:hover:text-white px-3 py-2 flex items-center text-xs uppercase font-bold" href="#">Analytics</a>
-        </li>
-        <li class="nav-item">
-          <a class="text-white lg:text-gray-300 lg:hover:text-white px-3 py-2 flex items-center text-xs uppercase font-bold" href="#">Templates</a>
-        </li>
-        <li class="nav-item">
-          <a class="text-white lg:text-gray-300 lg:hover:text-white px-3 py-2 flex items-center text-xs uppercase font-bold" href="#">Enterprise</a>
-        </li>
-      </ul>
-      <div class="flex items-center">
-        <div class="relative flex items-center">
-          <input class="rounded-l-md bg-gray-600 text-white pl-8 pr-3 py-2 focus:outline-none focus:shadow-outline" type="text" placeholder="Search documentation..." aria-label="Search">
-          <div class="absolute inset-y-0 left-0 flex items-center pl-3">
-            <button class="text-gray-500 hover:text-white focus:outline-none" type="button" aria-label="Keyboard shortcut (Ctrl + K)">
-              <span class="hidden sm:inline-block">Ctrl + K</span>
-              <span class="sm:hidden">K</span>
-            </button>
-          </div>
-        </div>
-        <button class="bg-gray-600 text-white px-4 py-2 rounded-md ml-2 focus:outline-none">Deploy</button>
-        <button class="bg-gray-300 text-gray-800 px-4 py-2 rounded-md ml-2 focus:outline-none">Learn</button>
+        <p class="text-[#888] pl-2 text-sm tracking-wide"> ~ npx create-next-app@latest</p>
       </div>
-    </div>
-  </nav>
-  <hero class="text-center justify-center bg-black">
-    <div class="container mx-auto px-4 py-24">
-      <h1 class="text-white text-5xl">The React Framework for the Web</h1>
-      <h3 class="text-white text-xl mt-4">Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.</h3>
-      <div class="mt-10">
-        <div class="flex justify-center">
-          <button class="btn btn-light mr-2">Light</button>
-          <button class="btn btn-dark">Dark</button>
-        </div>
-      </div>
-      <p class="text-white mt-8">npx create-next-app@latest</p>
     </div>
   </hero>
+
+  <div class="container flex flex-row mx-auto px-4 pt-30 mb-10 text-center justify-center items-center">
+    <h2 class="font-bold text-[#DDDDDD] text-4xl pb-4 pr-4 tracking-tighter">What's in Next.js?</h2>
+    <h5 class="text-[#888] text-xl">Everything you need to build great products on the web.</h5>
+  </div>
+  <div class="container mx-auto text-white">
+    <div class="flex flex-wrap mx-6">
+      <!-- 3 Grandes-->
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Built-in Optimizations</h5>
+                <p class="text-[#888] text-sm">Automatic Image, Font, and Script Optimizations for improved UX and Core Web Vitals.</p>
+            </a>
+        </div>
+      </div>
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Dynamic HTML Streaming</h5>
+                <p class="text-[#888] text-sm">Instantly stream UI from the server, integrated with the App Router and React Suspense.</p>
+            </a>
+        </div>
+      </div>
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">React Server Components</h5>
+                <p class="text-[#888] text-sm">Add components without sending additional client-side JavaScript. Built on the latest React features.</p>
+            </a>
+        </div>
+      </div>
+      <!-- Chicos -->
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Data Fetching</h5>
+                <p class="text-[#888] text-sm">Make your React component async and await your data. Next.js supports both server and client data fetching.</p>
+            </a>
+        </div>
+      </div>
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">CSS Support</h5>
+                <p class="text-[#888] text-sm">Style your application with your favorite tools, including support for CSS Modules, Tailwind CSS, and popular community libraries.</p>
+            </a>
+        </div>
+      </div>
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Client and Server Rendering</h5>
+                <p class="text-[#888] text-sm">Flexible rendering and caching options, including Incremental Static Regeneration (ISR), on a per-page level.</p>
+            </a>
+        </div>
+      </div>
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Server Actions</h5>
+                <p class="text-[#888] text-sm">Run server code by calling a function. Skip the API. Then, easily revalidate cached data and update your UI in one network roundtrip.</p>
+            </a>
+        </div>
+      </div>
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Route Handlers</h5>
+                <p class="text-[#888] text-sm">Build API endpoints to securely connect with third-party services for handling auth or listening for webhooks.</p>
+            </a>
+        </div>
+      </div>
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Next.js 14</h5>
+                <div class="container flex flex-row justify-between">
+                  <p class="text-[#888] text-base  mr-15">The power of full-stack to the frontend. Read the release notes.</p>
+                  <span class="inline-flex items-center justify-center w-6 h-6 me-2 text-sm font-semibold text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
+                    <svg width="25" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Icon description</span>
+                  </span>
+                </div>
+            </a>
+        </div>
+      </div>
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Advanced Rounting & Nested Layouts</h5>
+                <p class="text-[#888] text-sm">Create routes using the file system, including support for more advanced rounting patterns and UI layouts.</p>
+            </a>
+        </div>
+      </div>
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Middleware</h5>
+                <p class="text-[#888] text-sm">Take control of the incoming request. Use code to define routing and access rules for authentication, experimentation, and internationalization.</p>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container flex flex-row mx-auto px-4 pt-30 mb-10 text-center justify-center items-center mt-40">
+    <h2 class="font-bold text-[#DDDDDD] text-4xl pb-4 pr-4 tracking-tighter">Built on a foundation of fast, production-grade tooling</h2>
+  </div>
+  <div class="container mx-auto text-white">
+    <div class="flex flex-wrap mx-6">
+      <!-- 3 Grandes-->
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">React</h5>
+                <p class="text-[#888] text-sm">The library for web and native user interfaces. Next.js is built on the latest React features, including Server Components and Actions.</p>
+            </a>
+        </div>
+      </div>
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Turbopack</h5>
+                <p class="text-[#888] text-sm">An incremental bundler optimized for JavaScript and TypeScript, written in Rust, and built into Next.js.</p>
+            </a>
+        </div>
+      </div>
+      <div class="w-full max-w-sm bg-black border border-[#686868] rounded-lg shadow dark:bg-black dark:border-[#686868] m-2 hover:bg-[#0B0B0B]">
+        <a href="#">
+            <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
+        </a>
+        <div class="px-5 pb-5">
+            <a href="#">
+                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Speedy Web Compiler</h5>
+                <p class="text-[#888] text-sm">An extensible Rust based platform for the next generation of fast developer tools, and can be used for both compilation and minification.</p>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section>
+    <div class="container mx-auto px-4 pt-30 mb-10 text-left justify-left items-left mt-40 pl-20">
+      <div class="flex flex-row">
+        <h2 class="font-bold text-[#DDDDDD] text-4xl pb-4 pr-4 tracking-tighter">Get started in seconds</h2>
+        <h5 class="text-[#888] text-xl pt-3">Deploy Next.js to Vercel.</h5>
+      </div>
+      <div class="mb-20" />
+      <div class="flex flex-row">
+        <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">Starter</span>
+        <span class="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">Ecommerce</span>
+        <span class="bg-red-100 text-red-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">Blog</span>
+        <span class="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">AI</span>
+        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-yellow-900 dark:text-yellow-300">Edge Functions</span>
+        <span class="bg-indigo-100 text-indigo-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-indigo-900 dark:text-indigo-300">Edge Config</span>
+        <span class="bg-purple-100 text-purple-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">Purple</span>
+        <span class="bg-pink-100 text-pink-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-pink-900 dark:text-pink-300">Pink</span>
+      </div>
+      <p class="my-5 text-[#7E7E7E] text-lg">Vercel is a frontend cloud from the creators of Next.js, making it easy to get started with Next.js quickly.</p>
+      <p class="text-[#7E7E7E] text-lg mb-10">Jumpstart your Next.js development with pre-built solutions from Vercel and our community.</p>
+      <button class="bg-white text-black px-4 py-2.5 rounded-md focus:outline-none text-base font-medium hover:bg-[#CCCCCC]">Deploy a Template on Vercel</button>
+    </div>
+  </section>
+  
+  <div class="mx-auto pt-30 mb-10 text-center justify-center items-center">
+    <h2 class="font-bold text-[#DDDDDD] text-4xl pb-4 pr-4 tracking-tighter">The framework of choice when it matters</h2>
+    <!--Gallery-->
+    <h3 class="text-[#838383] text-xl mt-4 px-5 pt-5">For <span class="text-[#FAFAFA]">perfomance efficiency</span> and <span class="text-[#FAFAFA]">developer experience</span></h3>
+    <h3 class="text-[#838383] text-xl mt-1 px-5 mb-10">Next.js is trusted by some of the biggest names on the web.</h3>
+    <button class="bg-white text-black px-4 py-2.5 rounded-md focus:outline-none text-base font-medium hover:bg-[#CCCCCC]">View the Nextj.js Showcase</button>
+    <div class="container mx-auto text-white pt-10 mt-5">
+      <div class="flex flex-wrap mx-6 bg-[#111111] rounded-md border border-[#333333] text-left">
+        <!-- 3 Juntos-->
+        <div class="w-full max-w-[400px] bg-transparent border-r border-[#333333]">
+          <div class="px-5 pb-5 my-5 mx-2">
+                  <p class="text-base">"With Next.js at the helm of our headless tech stack, our developers can create features with velocity and speed, ultimately enabling users to create whatever, whenever they want to."</p>
+          </div>
+        </div>
+        <div class="w-full max-w-[400px] bg-transparent border-r border-[#333333]">
+          <div class="px-5 pb-5 my-5 mx-2">
+                  <p class="text-base">"My favorite UX feedback from customers is: "How is the app so fast?" Because we've built on Next.js and Vercel since day one, our apges load in an instant, which is important when it comes to mission-critical software."</p>
+          </div>
+        </div>
+        <div class="w-full max-w-[400px] bg-transparent">
+          <div class="px-5 pb-5 my-5 mx-2">
+                  <p class="text-base">"Next.js has been a game-changer for our agency work and team collaboration. Its powerful features have allowed us to build high-performance websites quickly and efficiently like never before."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-center text-white text-left">
+    <div class="container mx-auto justify-left text-sm items-left">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-1/6 p-4">
+          <h5 class="text-uppercase">Vercel</h5>
+        </div>
+        <div class="w-full md:w-1/6 p-4">
+          <h5 class="">Resources</h5>
+          <ul class="list-none">
+            <li class="text-white">Docs</li>
+            <li class="text-white">Learn</li>
+            <li class="text-white">Showcase</li>
+            <li class="text-white">Blog</li>
+            <li class="text-white">Analytics</li>
+            <li class="text-white">Next.js Conf</li>
+            <li class="text-white">DX Platform</li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/6 p-4">
+          <h5 class="">More</h5>
+          <ul class="list-none">
+            <li class="text-white">Next.js Commerce</li>
+            <li class="text-white">Contact Sales</li>
+            <li class="text-white">Github</li>
+            <li class="text-white">Releases</li>
+            <li class="text-white">Telemetry</li>
+            <li class="text-white">Governance</li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/6 p-4">
+          <h5 class="">About Vercel</h5>
+          <ul class="list-none">
+            <li class="text-white">Next.js + Vercel</li>
+            <li class="text-white">Open Source Software</li>
+            <li class="text-white">Github</li>
+            <li class="text-white">X</li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/6 p-4">
+          <h5 class="">Legal</h5>
+          <ul class="list-none">
+            <li class="text-white">Privacy Policy</li>
+            <li class="text-white">Cookie Preferences</li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/6 p-4">
+          <h5 class="">Subscribe to our newsletter</h5>
+          <ul class="list-none">
+            <li class="text-white">Stay updated on new releases and features, guides, and case studies.</li>
+            <li class="text-white">
+              <div class="relative flex items-center">
+                <input class="rounded-md bg-[#161616] hover:bg-[#1F1F1F] text-[#7C7C7C] pl-4 pr-20 py-1.5 focus:outline-none focus:shadow-outline text-sm" type="text" placeholder="Search documentation..." aria-label="Search">
+                <div class="absolute inset-y-0 right-0 flex items-center pl-3">
+                  <span class="bg-[#0A0A0A] text-white text-xs font-medium me-2 px-1.5 py-0.5 rounded-md dark:bg-[#0A0A0A] dark:text-white border border-gray-500">CtrlK</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
 </body>
 
 </html>
